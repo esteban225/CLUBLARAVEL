@@ -2162,7 +2162,9 @@
     "components": {
         "securitySchemes": {
             "BearerToken": {
-                "type": "http"
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
             }
         }
     }

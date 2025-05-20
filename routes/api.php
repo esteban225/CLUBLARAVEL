@@ -8,7 +8,7 @@ use App\Http\Controllers\ParticipacionesController;
 use App\Http\Controllers\PrestamosController;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware('jwt.auth', 'auth.role:admin')->group(function () {
+Route::middleware('jwt.auth', 'auth.role:user')->group(function () {
     Route::apiResource('asociados', AsociadosController::class);
     Route::apiResource('pagos', PagosController::class);
     Route::apiResource('participaciones', ParticipacionesController::class);
